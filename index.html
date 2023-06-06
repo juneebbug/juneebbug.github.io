@@ -1,0 +1,91 @@
+<!-- just know that current stuff are just placeholders, not the final. -->
+
+<div id="container">    
+    <div id="headerArea" style="text-align: center;">
+        <h1>juneebug</h1>
+        <div id="header"></div>
+    </div>
+    
+    <div id="flex" style="text-align: center;">                    
+        <a href="https://neocities.org/">CREATIVES</a> 
+        <a href="https://neocities.org/">HOME</a> 
+        <a href="https://neocities.org/">OTHERS</a>
+        <a href="https://neocities.org/">CONTACTS</a>
+    </div>
+</div>
+
+<style>
+    body{
+        background-color: white;
+    }
+    * {
+        box-sizing: border-box;
+    }   
+    @font-face {
+        font-family: infinity;
+        src: url(MADEINFINITY\ PERSONALUSE-Regular.otf);
+    }
+    h1{
+        font-family: infinity;
+        font-size: 80;
+        background-image: url("clippeding.png"); /* here to color:transparent is for clipping image */
+        background-clip: text;
+        background-size: cover;
+        -webkit-background-clip: text;
+        color:transparent;
+    }
+    a {
+        font-family: infinity;
+        font-size: 52;
+        padding: 0;
+        justify-content: space-evenly;
+        margin-left: 25px;
+        margin-right: 25px;
+        box-shadow: inset 0 0 0 0 #000000;
+        color: #000000;
+        transition: color .3s cubic-bezier(0,.94,.76,1), box-shadow .3s cubic-bezier(0,.94,.76,1);
+    }
+    a:link {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    a:visited {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+        box-shadow: inset 0 70px 0 0 #000000;
+        color: white;
+    }
+    a:active {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    #header {
+        width: 100%;
+        height: 100px;
+        background-size: 100%;
+        text-align: center;
+    }
+
+    #container {
+        max-width: 1500px;
+        margin: 0 auto; /*centered*/
+        text-align: center;
+    }
+    #gallery { 
+        display:flex;
+        flex-wrap:wrap;
+        width:350px; 
+        margin: 0 auto;
+        transition: scale .3s ease-in-out;
+    }
+    #gallery img {
+        width:100px; 
+        height:100px; 
+        object-fit:cover;
+        margin: 0 auto;
+    }
+
+</style>
